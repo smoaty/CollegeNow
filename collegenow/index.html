@@ -1,6 +1,75 @@
+<!DOCTYPE html>
+
 <html>
-	<head>
-			<script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.3/xlsx.full.min.js"></script>
-			<script src="get_data.js"></script>
-	</head>
+
+  <head>
+
+
+                <link rel="stylesheet" type="text/css" href="./style.css">
+                <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+                <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+                <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.3/xlsx.full.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+                <script src="get_data.js"></script>
+                <script src="app.js"></script>
+
+
+
+	 
+
+  	<script>
+
+  /* When the user clicks on the button,toggle between hiding and showing the dropdown content */
+
+	function myFunction() {
+
+    	document.getElementById("myDropdown").classList.toggle("show")
+
+	}
+
+
+// Close the dropdown menu if the user clicks outside of it
+
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+	  	var dropdowns = document.getElementsByClassName("dropdown-content");
+    	  	var i;
+	  	for (i = 0; i < dropdowns.length; i++) {
+	 	 var openDropdown = dropdowns[i];
+	  	if (openDropdown.classList.contains('show')) {
+	  	openDropdown.classList.remove('show');
+      			}
+   		 }
+
+  	}
+}
+
+	</script>
+
+  </head>
+
+  
+
+  <body> 
+	<h3>Please select appropriate Student Status from the Dropdown menu for the details regarding your scholorships</h3>
+ 	
+	<div class="dropdown">
+
+  		<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+
+  		<div id="myDropdown" onclick="CreateTableFromJSON()"  class="dropdown-content">
+	
+  		<a href="#" >High School Student</a>
+    	  	
+		</div>
+
+	</div>
+ 	
+	<div id="showData"></div>
+
+ </body>
+
+
 </html>
