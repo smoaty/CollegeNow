@@ -1,9 +1,7 @@
-$( function (){
- $('#mySelect').on('change', function() {
-  input1 = $(this).val();
-console.log(input1)
-  CreateTableFromJSON();
-})
+$(document).ready(function(){
+$("#student").change(function(){
+	input1 = $("#student option:selected").text()
+	})
 })
 function CreateTableFromJSON() {
 //for (var i=0;i<12;i++){
