@@ -3,10 +3,11 @@ var url = "./Scholarship_Database.xlsx";
 var oReq = new XMLHttpRequest();
 var newData = ''
 var sortedData = []
-var input1 = 'High School Students'
+var input1='High School Student'
 var input2 = 'x'
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
+//console.log(a)
 
 oReq.onload = function(e) {
   var arraybuffer = oReq.response;
