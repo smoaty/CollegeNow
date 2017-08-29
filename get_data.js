@@ -7,7 +7,7 @@ var input1='High School Student'
 var input2 = 'x'
 oReq.open("GET", url, true);
 oReq.responseType = "arraybuffer";
-//console.log(a)
+console.log("a")
 
 oReq.onload = function(e) {
   var arraybuffer = oReq.response;
@@ -17,7 +17,7 @@ oReq.onload = function(e) {
   var arr = new Array();
   for(var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
   var bstr = arr.join("");
-
+console.log("b")
   /* Call XLSX */
   var workbook = XLSX.read(bstr, {type:"binary"});
 
@@ -26,6 +26,7 @@ var first_sheet_name = workbook.SheetNames[0];
 /* Get worksheet */
 var worksheet = workbook.Sheets[first_sheet_name];
 newData = XLSX.utils.sheet_to_json(worksheet)
+console.log(newData)
 }
 
 oReq.send();
@@ -35,11 +36,12 @@ for(var i = 0; i < arr.length; i++){
 	if(arr[i].DropbdownSelection === input1){
 		if(input2 != '' && arr[i]['Input box number only'] === input2){
 			sortedData.push(arr[i])
-			}
+console.log("hi")
+console.log(arr[i])			}
 		else if(input2 == ''){
 			sortedData.push(arr[i])
 		}
-		
+
 	}
 	}
 }

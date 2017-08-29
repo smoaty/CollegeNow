@@ -11,9 +11,9 @@
                 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
                 <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.3/xlsx.full.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		 <script src="app.js"></script>
+		<script src="app.js"></script>		 
                 <script src="get_data.js"></script>
-                <script src="app.js"></script>
+                
         
   </head>
 
@@ -22,9 +22,9 @@
     <h1>Select tags 1.5!</h1>
 
 
-<form action="/action_page.php">
+<!--<form action="/action_page.php">-->
 
-  <select name="Student Status" onchange="this.form.submit();">
+  <select name="Student Status" id="mySelect" >
 
     <option value="" >Student Status</option>
 
@@ -42,7 +42,10 @@
 
 </select>
 
-</form>
+
+	<div id="showData"></div>
+
+<!--</form>-->
 
 </body>
 

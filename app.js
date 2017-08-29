@@ -1,3 +1,10 @@
+$( function (){
+ $('#mySelect').on('change', function() {
+  input1 = $(this).val();
+console.log(input1)
+  CreateTableFromJSON();
+})
+})
 function CreateTableFromJSON() {
 //for (var i=0;i<12;i++){
 // input1=$('.dropdown-content')[0].childNodes[i].innerText
@@ -10,10 +17,13 @@ function CreateTableFromJSON() {
 //$('.dropdown-content').on('click',function(){
 //	input1=$(this).childNode.innerText;console.log($('.dropdown-content'))
 //	console.log(input1)})
-
+	//$('#mySelect').on('change', function() {
+  	//input1 = $(this).val();})   
+	//console.log(input1)
 	//get data from get_data file  and store it in Data
 	sort(newData)
 	var Data=sortedData
+console.log("hello")
 
         // EXTRACT VALUE FOR HTML HEADER.
 
