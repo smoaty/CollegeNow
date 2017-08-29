@@ -1,6 +1,8 @@
-
-input1 = $("#Student Status :selected").text()
-
+$(document).ready(function(){
+$("#student").change(function(){
+	input1 = $("#student option:selected").text()
+	})
+})
 function CreateTableFromJSON() {
 	//get data from get_data file  and store it in Data
 	sort(newData)
