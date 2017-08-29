@@ -5,8 +5,9 @@
                 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
                 <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.3/xlsx.full.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		 <script src="app.js"></script>
                 <script src="get_data.js"></script>
-                <script src="app.js"></script>
+                
         <script>
   /* When the user clicks on the button,toggle between hiding and showing the dropdown content */
         function myFunction() {
@@ -25,21 +26,31 @@
                  }
         }
 }
-        </script>
+
+</script>
+
+	
+
   </head>
   <body>
         <h3>Please select appropriate Student Status from the Dropdown menu for the details regarding your scholorships</h3>
         <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" onclick="CreateTableFromJSON()" class="dropdown-content">
-                <a href="#" >High School Student</a>
+                <div id="myDropdown" onclick="CreateTableFromJSON()" class="dropdown-content"> 
+		<a href="#">High School Student</a>
                 <a href="#">Undergrad</a>
                 <a href="#">College Graduate</a>
                 <a href="#">Adult Learner</a>
                 <a href="#">PHD</a>
                 <a herf="#">Undocumented</a>
+		
                 </div>
         </div>
-        <div id="showData"></div>
+		
+	<div id="showData"></div>
+
+
+
+
  </body>
 </html>
