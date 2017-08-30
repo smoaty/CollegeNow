@@ -19,7 +19,11 @@ th {
     text-align: left;
     padding: 8px;
 }
-/* Dropdown Button */ .dropbtn {
+
+
+
+/* Dropdown Button */
+    .dropbtn {
     background-color: #522F91;
     color: white;
     padding: 16px;
@@ -51,5 +55,7 @@ th {
     display: block;
 }
 /* Change color of dropdown links on hover */ .dropdown-content a:hover {background-color: #ddd} /* Show the dropdown menu (use JS to add this class 
-to the .dropdown-content co$
+to the .dropdown-content co$*/
 .show {display:block;}
+
+
