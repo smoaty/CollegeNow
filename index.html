@@ -3,17 +3,22 @@
   <head>
 
 
-    <title>My 1st Drop down</title>
+		<title>College Now</title>
+
 
 
                 <link rel="stylesheet" type="text/css" href="./style.css">
-                <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+				<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+ 				<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
                 <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.3/xlsx.full.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<script src="app.js"></script>		 
                 <script src="get_data.js"></script>
-                <script src="app.js"></script>
+                
         
+
 </head>
   
     <body>
@@ -26,9 +31,9 @@
 <div class="student_status">
 <div class="select-style">
 
-  <form>
+ 
   
-  <select id="Student" onchange="this.form.submit();">
+  <select id="Student">
 
     <option style="color:white">Student Status</option>
  
@@ -46,14 +51,14 @@
 
    </select>
  
-  </form>
- 
  </div> 
 </div>
 
 <div class="bootable">
- <table id="table"
-	data-sort-order="desc">
+<table id="table"
+	data-sort-order="desc"
+	data-show-toggle="true">
+	
 	<thead>
 	<tr>
 		<th data-field="DropbdownSelection"
@@ -73,17 +78,16 @@
 				Amount of Scholarship
 		</th>
 		<th data-field="Text in the result listing (Hyperlink) open in NEW WINDOW"
-	  		data-sortable="false">
+	  		data-sortable="false"
+			data-formatter="linkFormatter">
 				Website
 		</th>
-	     </tr>
-	     </thead> 
-          </table>
- 
-  </div> 
-  
-  </div> 
-  
-  </body>
+	</tr>
+	</thead>
+</table>
+        </div>
+      </div>
+</body>
+
 
 </html>
