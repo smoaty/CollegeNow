@@ -20,11 +20,15 @@
     
 <h1>Select tags 2.0!</h1>
     
-     <div class="select-style">
+<div class="container">
+
+     
+<div class="student_status">
+<div class="select-style">
 
   <form>
   
-  <select name="Student Status" onchange="this.form.submit();">
+  <select id="Student" onchange="this.form.submit();">
 
     <option style="color:white">Student Status</option>
  
@@ -44,8 +48,42 @@
  
   </form>
  
-    </div> 
+ </div> 
+</div>
 
-</body>
+<div class="bootable">
+ <table id="table"
+	data-sort-order="desc">
+	<thead>
+	<tr>
+		<th data-field="DropbdownSelection"
+	  		data-sortable="true">
+				Student Status
+		</th>
+		<th data-field="Text in the result listing"
+			data-sortable="false">
+				Provider
+		</th>
+		<th data-field="Text in the result listing_1"
+			data-sortable="false">
+				Description
+		</th>
+		<th data-field="Text in the result listing_2"
+	  		data-sortable="true">
+				Amount of Scholarship
+		</th>
+		<th data-field="Text in the result listing (Hyperlink) open in NEW WINDOW"
+	  		data-sortable="false">
+				Website
+		</th>
+	     </tr>
+	     </thead> 
+          </table>
+ 
+  </div> 
+  
+  </div> 
+  
+  </body>
 
 </html>
