@@ -8,11 +8,13 @@
 
 
                 <link rel="stylesheet" type="text/css" href="./style.css">
-                <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+				<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+ 				<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
                 <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.3/xlsx.full.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="app.js"></script>		 
+				<script src="app.js"></script>		 
                 <script src="get_data.js"></script>
                 
         
@@ -24,7 +26,6 @@
 
 
 
-  <select name="Student Status" id="mySelect" >
 
   <select id="student">
 
@@ -46,7 +47,33 @@
 
 
 
-<div id="showData"></div>
+<table id="table"
+	data-sort-order="desc">
+	<thead>
+	<tr>
+		<th data-field="DropbdownSelection"
+	  		data-sortable="true">
+				Student Status
+		</th>
+		<th data-field="Text in the result listing"
+			data-sortable="false">
+				Provider
+		</th>
+		<th data-field="Text in the result listing_1"
+			data-sortable="false">
+				Description
+		</th>
+		<th data-field="Text in the result listing_2"
+	  		data-sortable="true">
+				Amount of Scholarship
+		</th>
+		<th data-field="Text in the result listing (Hyperlink) open in NEW WINDOW"
+	  		data-sortable="false">
+				Website
+		</th>
+	</tr>
+	</thead>
+</table>
 
 </body>
 

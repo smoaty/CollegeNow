@@ -3,6 +3,7 @@ $("#student").change(function(){
 	input1 = $("#student option:selected").text()
 	})
 })
+var Data = ''
 function CreateTableFromJSON() {
 //for (var i=0;i<12;i++){
 // input1=$('.dropdown-content')[0].childNodes[i].innerText
@@ -20,8 +21,10 @@ function CreateTableFromJSON() {
 	//console.log(input1)
 	//get data from get_data file  and store it in Data
 	sort(newData)
-	var Data=sortedData
+	Data = sortedData
+/*
 console.log("hello")
+
 
         // EXTRACT VALUE FOR HTML HEADER.
 
@@ -42,7 +45,8 @@ console.log("hello")
         var tr = table.insertRow(-1);                   // TABLE ROW.
 
         for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
+           	var th = document.createElement("th");      // TABLE HEADER.
+            th.setAttribute("class","th-inner sortable both desc")
             th.innerHTML = col[i];
             tr.appendChild(th);
         }
@@ -58,11 +62,22 @@ console.log("hello")
             }
         }
 
+
         // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
         var divContainer = document.getElementById("showData");
         divContainer.innerHTML = "";
         divContainer.appendChild(table);
-    }
+  */
+  	
+
+	}
+
+function bootStrapTable(){
+	$('#table').bootstrapTable({
+		data: Data
+	});
+}
+
 
 
 
