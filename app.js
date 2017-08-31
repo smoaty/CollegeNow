@@ -1,6 +1,6 @@
 $(document).ready(function(){
-$("#student").change(function(){
-	input1 = $("#student option:selected").text()
+$("#Student").change(function(){
+	input1 = $("#Student option:selected").text()
 	})
 })
 var Data = ''
