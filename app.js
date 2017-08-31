@@ -78,7 +78,13 @@ function bootStrapTable(){
 	});
 }
 
-
+function linkFormatter(value){
+	if(value.charAt(value.length-1) == "/"){
+		value = value.slice(0,-1)
+	}
+		return "<a href="+value+">"+value+"</a>"
+	
+}
 
 
 
