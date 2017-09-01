@@ -1,9 +1,16 @@
 $(document).ready(function(){
 $("#Student").change(function(){
 	input1 = $("#Student option:selected").text()
+	CreateTableFromJSON()
 	})
 })
 var Data = ''
+
+function bootStrapTable(){
+	$('#table').bootstrapTable({
+		data: Data
+	});
+}
 function CreateTableFromJSON() {
 //for (var i=0;i<12;i++){
 // input1=$('.dropdown-content')[0].childNodes[i].innerText
@@ -22,6 +29,7 @@ function CreateTableFromJSON() {
 	//get data from get_data file  and store it in Data
 	sort(newData)
 	Data = sortedData
+	bootStrapTable()
 /*
 console.log("hello")
 
@@ -72,11 +80,6 @@ console.log("hello")
 
 	}
 
-function bootStrapTable(){
-	$('#table').bootstrapTable({
-		data: Data
-	});
-}
 
 function linkFormatter(value){
 	if(value.charAt(value.length-1) == "/"){
@@ -85,7 +88,13 @@ function linkFormatter(value){
 		return "<a href="+value+">"+value+"</a>"
 	
 }
-
-
-
+function queryParams(){
+	return{
+		type: "owner",
+		sort: "updated",
+		directions: "desc",
+		per_page: 100,
+		page:1
+	}
+}
 
