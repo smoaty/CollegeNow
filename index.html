@@ -23,7 +23,7 @@
   
     <body>
     
-<h1>Select tags 2.0!</h1>
+<!--h1>Select tags 2.0!</h1-->
     
 <div class="container">
 
@@ -53,12 +53,11 @@
  
  </div> 
 </div>
-
 <div class="bootable">
 <table id="table"
-	data-sort-order="desc"
+	data-sort-order="asc"
 	data-show-toggle="true"
-	data-query-params="queryParams"
+ 	data-query-params="queryParams"
 	data-pagination="true"
 	data-search="true"
 	data-height="700">
@@ -81,9 +80,30 @@
 	  		data-sortable="true">
 				GPA Required
 		</th>
-		<th data-field="Text in the result listing_2"
+		<th data-field="Input box number only_1"
 	  		data-sortable="true">
-				Amount of Scholarship
+				ACT
+		</th>
+		<th data-field="Multi-Select"
+	  		data-sortable="true">
+				Ethnicity
+		</th>
+		<th data-field="Dropdown"
+	  		data-sortable="true">
+				Gender
+		</th>
+		<th data-field="Text in the result listing_2"
+	  		data-sortable="true"
+			data-sorter="scholarshipSorter">
+				Amount
+		</th>
+		<th data-field="Input Box"
+	  		data-sortable="true">
+				Open Date
+		</th>
+		<th data-field="Input Box_1"
+	  		data-sortable="true">
+				Closing Date
 		</th>
 		<th data-field="Text in the result listing (Hyperlink) open in NEW WINDOW"
 	  		data-sortable="false"
@@ -93,8 +113,8 @@
 	</tr>
 	</thead>
 </table>
-        </div>
-      </div>
+  </div>
+</div>
 </body>
 
 
