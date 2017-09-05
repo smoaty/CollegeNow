@@ -1,3 +1,4 @@
+/*table*/
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -27,7 +28,7 @@ th {
    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
    height: 29px;
    overflow: hidden;
-   width: 200px;
+   width: 190px;
    background-color: #522F91;
    outline: none;
 }
@@ -49,4 +50,42 @@ th {
 }
 
 
+/*div border room*/
 
+.container {
+ height:990px ;
+ width: 400px;
+ border-style: solid;
+ border-width: 1px; 
+border-color: red;
+}
+
+.student_status {
+ height:30px ;
+ width: 192px;
+ border-style: solid;
+ border-width: 1px;
+ border-color: blue;
+}
+
+.bootable {
+ height:56px ;
+ width: 1158px;
+ border-style: solid;
+ border-width: 1px;
+ border-color: green;
+}
+
+.card-view{
+  clear: both;
+}
+.card-view .title{
+  display: block;
+  width: 30%;
+  float: left;
+}
+.card-view .value{
+  display: block;
+  width: 70%;
+  float: right;
+}
