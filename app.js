@@ -1,8 +1,10 @@
 $(document).ready(function(){
 $("#Student").change(function(){
-	input1 = $("#Student option:selected").text()
+$('.student_status').fadeOut(1000);
+$('.bootable').fadeIn(1000);	
+input1 = $("#Student option:selected").text()
 	CreateTableFromJSON()
-	})
+  })
 })
 var Data = ''
 
@@ -40,5 +42,4 @@ function scholarshipSorter(value){
 		return 0
 	}
 }
-
 
