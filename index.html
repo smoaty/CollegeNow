@@ -8,17 +8,17 @@
 
 
                 <link rel="stylesheet" type="text/css" href="./style.css">
-                <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+                <script src="https://code.jquery.com/jquery-3.2.1.js"></script>	
 				<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
                 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
  				<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
                 <script lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.3/xlsx.full.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/extensions/filter-control/bootstrap-table-filter-control.js"></script>				
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/extensions/natural-sorting/bootstrap-table-natural-sorting.js"></script>
 				<script src="app.js"></script>		 
                 <script src="get_data.js"></script>
-                
-        
-
+				
 </head>
   
     <body>
@@ -60,6 +60,7 @@
  	data-query-params="queryParams"
 	data-pagination="true"
 	data-search="true"
+ 	data-filter-control="true"
 	data-height="700">
 	
 	<thead>
@@ -77,37 +78,43 @@
 				Description
 		</th>
 		<th data-field="Input box number only"
-	  		data-sortable="true">
+	  		data-field-control="select">
 				GPA Required
 		</th>
 		<th data-field="Input box number only_1"
-	  		data-sortable="true">
+	  		data-sortable="true"
+			data-filter-control="select">
 				ACT
 		</th>
 		<th data-field="Multi-Select"
-	  		data-sortable="true">
+	  		data-sortable="true"
+			data-filter-control="select">
 				Ethnicity
 		</th>
 		<th data-field="Dropdown"
-	  		data-sortable="true">
+	  		data-sortable="true"
+			data-filter-control="select">
 				Gender
 		</th>
 		<th data-field="Text in the result listing_2"
 	  		data-sortable="true"
-			data-sorter="scholarshipSorter">
+			data-sorter="numericOnly">
 				Amount
 		</th>
 		<th data-field="Input Box"
-	  		data-sortable="true">
+	  		data-sortable="true"
+			data-filter-control="select">
 				Open Date
 		</th>
 		<th data-field="Input Box_1"
-	  		data-sortable="true">
+	  		data-sortable="true"
+			data-filter-control="select">
 				Closing Date
 		</th>
 		<th data-field="Text in the result listing (Hyperlink) open in NEW WINDOW"
 	  		data-sortable="false"
-			data-formatter="linkFormatter">
+			data-formatter="linkFormatter"
+			data-filter-control="false">
 				Website
 		</th>
 	</tr>
@@ -116,6 +123,5 @@
   </div>
 </div>
 </body>
-
 
 </html>
