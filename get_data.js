@@ -1,5 +1,5 @@
 /* set up XMLHttpRequest */
-var url = "./Scholarship_Database (2).xlsx";
+var url = "./Scholarship_Database.xlsx";
 var oReq = new XMLHttpRequest();
 var newData = ''
 var sortedData = []
